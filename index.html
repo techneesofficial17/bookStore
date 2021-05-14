@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBookList</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/573e62a9c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-text mt-5 text-center ">
+            <span class="text-info"> <i class="fas fa-book-open"></i></span> <span class="text-light">My</span> <span class="text-info">Book</span> <span class="text-light">Store</span>
+        </h1>
+        <hr>
+        <form id="form">
+            <div class="form-group mb-5">
+                <label for="title"><h3>Title :</h3> </label>
+                <input type="text" class="form-control" name="title" id="title">
+            </div>
+            <div class="form-group mb-5">
+                <label for="author"><h3>Author :</h3> </label>
+                <input type="text" class="form-control" name="Author" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn"><h3>ISBN :</h3> </label>
+                <input type="text" class="form-control" name="isbn" id="isbn">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success mt-4  w-100 mb-5" value="Add Book">
+            </div>
+
+        </form>
+        <div class="table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="bookList">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
